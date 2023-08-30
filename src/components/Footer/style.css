@@ -1,0 +1,39 @@
+.footer--main {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-dark, #430964);
+  padding: 70px 80px;
+  gap: 50px;
+  color: white;
+}
+.footer--content {
+  display: grid;
+  grid-template-columns: 1fr 400px 300px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.linkitem--main {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  text-decoration: none;
+}
+.footer--links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 300px;
+}
+.footer--links div {
+  display: flex;
+  flex-direction: column;
+}
+.footer--email {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}

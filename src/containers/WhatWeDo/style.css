@@ -1,0 +1,23 @@
+.wwd--main {
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wwd--card--container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.wwd--card--main {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+}
+.wwd--card--icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}

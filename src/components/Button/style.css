@@ -1,0 +1,31 @@
+.main {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 25px;
+  border: 0px;
+}
+.main:hover {
+  opacity: 0.4;
+}
+.primary {
+  background: var(--shades-white, #fff);
+}
+.secondary {
+  background: var(--primary-main, #70259b);
+}
+.outline {
+}
+.text {
+  background: var(--primary-main, #70259b);
+}
+.subtle {
+}
+.text-black {
+  color: black;
+}
+.text-white {
+  color: white;
+}
