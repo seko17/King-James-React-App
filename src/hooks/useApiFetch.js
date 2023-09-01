@@ -1,30 +1,20 @@
-import { useState, useEffect } from 'react';
-
-function useApiFetch(url) {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    async function fetchData() {
+export const useApiFetch = {
+  get: (url) => {
+    return new Promise(async (resolve, reject) => {
       try {
         const response = await fetch(url);
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          reject({
+            data: null,
+            loading: false,
+            err: "Network response was not ok",
+          });
         }
         const jsonData = await response.json();
-        setData(jsonData);
-        setLoading(false);
+        resolve({ data: jsonData, loading: false, err: null });
       } catch (err) {
-        setError(err);
-        setLoading(false);
+        reject({ data: null, loading: false, err });
       }
-    }
-
-    fetchData();
-  }, [url]);
-
-  return { data, loading, error };
-}
-
-export default useApiFetch;
+    });
+  },
+};

@@ -49,8 +49,8 @@ function AppBar() {
       </div>
       <div className="appbar-links">
         {links.map((link) => (
-          <Button variant="text" color="white">
-            Services
+          <Button key={link} variant="text" color="white">
+            {link}
           </Button>
         ))}
       </div>

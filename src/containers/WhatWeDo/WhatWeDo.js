@@ -5,12 +5,12 @@ import Typography from "../../components/Typography/Typography";
 import { info } from "./info";
 import Card from "../../components/Card/Card";
 
-
 function WhatWeDo() {
+  const { innerWidth } = window;
   return (
     <div className="wwd--main">
       <SectionLabel color={"black"}>What we do</SectionLabel>
-      <Typography variant={"h1"} color={"black"}>
+      <Typography variant={innerWidth < 599 ? "h3" : "h1"} color={"black"}>
         We offer a complete range of bespoke design and development services to
         help you turn your ideas into digital masterpieces
       </Typography>

@@ -21,3 +21,20 @@
   height: 64px;
   flex-shrink: 0;
 }
+/* Mobile Styles (up to 599px) */
+@media (max-width: 599px) {
+  /* Apply mobile-specific styles here */
+  .wwd--main {
+    padding: 100px 20px;
+  }
+}
+
+/* Tablet Styles (600px to 959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  /* Apply tablet-specific styles here */
+}
+
+/* Desktop Styles (960px and above) */
+@media (min-width: 960px) {
+  /* Apply desktop-specific styles here */
+}

@@ -18,3 +18,23 @@
   flex-shrink: 0;
   gap: 5px;
 }
+/* Mobile Styles (up to 599px) */
+@media (max-width: 599px) {
+  /* Apply mobile-specific styles here */
+  .appbar-links {
+    display: none;
+  }
+  .appbar-main{
+    padding: 20px;
+  }
+}
+
+/* Tablet Styles (600px to 959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  /* Apply tablet-specific styles here */
+}
+
+/* Desktop Styles (960px and above) */
+@media (min-width: 960px) {
+  /* Apply desktop-specific styles here */
+}

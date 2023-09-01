@@ -37,3 +37,27 @@
   font-weight: 400;
   line-height: 150%; /* 30px */
 }
+/* Mobile Styles (up to 599px) */
+@media (max-width: 599px) {
+  .footer--content {
+    grid-template-columns: 1fr;
+  }
+  .footer--links {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet Styles (600px to 959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  .footer--content {
+    grid-template-columns: 1fr;
+  }
+  .footer--links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop Styles (960px and above) */
+@media (min-width: 960px) {
+  /* Apply desktop-specific styles here */
+}

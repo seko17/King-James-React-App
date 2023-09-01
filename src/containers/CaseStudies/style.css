@@ -38,5 +38,24 @@
   flex-direction: column;
   padding: 20px;
   gap: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0),black);
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+}
+/* Mobile Styles (up to 599px) */
+@media (max-width: 599px) {
+  .case--main {
+    padding: 100px 20px !important;
+  }
+  .case--image--container {
+    gap: 10px;
+  }
+}
+
+/* Tablet Styles (600px to 959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  /* Apply tablet-specific styles here */
+}
+
+/* Desktop Styles (960px and above) */
+@media (min-width: 960px) {
+  /* Apply desktop-specific styles here */
 }

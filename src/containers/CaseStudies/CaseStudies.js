@@ -13,6 +13,7 @@ function CaseStudies() {
     require("../../assets/olympian.jpeg"),
     require("../../assets/dragon.jpeg"),
     require("../../assets/skhokho.jpeg"),
+    require("../../assets/olympian.jpeg"),
   ];
 
   return (

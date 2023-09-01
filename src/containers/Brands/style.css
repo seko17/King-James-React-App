@@ -1,11 +1,12 @@
-.company--main {
+.brands--main {
   max-width: 100%;
   padding: 100px 80px;
   display: flex;
   flex-direction: column;
   gap: 50px;
+  box-sizing: border-box;
 }
-.company--logo {
+.brands--logo {
   display: flex;
   max-width: 100%;
   padding: 40px 63px;
@@ -14,9 +15,101 @@
   align-items: center;
   gap: 10px;
 }
-.company--logo--container {
+.brands--logo--container {
   width: 100%;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+.brands--logo {
+  width: 100px;
+}
+.brands--toolbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.brands--toolbar--controls {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+select {
+  /* styling */
+  background-color: white;
+  border: thin solid var(--primary-main);
+  border-radius: 30px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select.minimal:focus {
+  background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* Mobile Styles (up to 599px) */
+@media (max-width: 599px) {
+  .brands--main {
+    padding: 100px 20px;
+  }
+  .brands--logo {
+    width: 60%;
+  }
+  .brands--logo--container {
+    grid-template-columns: 1fr;
+  }
+  .brands--toolbar {
+    flex-direction: column;
+  }
+}
+
+/* Tablet Styles (600px to 959px) */
+@media (min-width: 600px) and (max-width: 959px) {
+  .brands--logo--container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brands--toolbar {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1184px) {
+  .brands--logo--container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .brands--toolbar {
+    flex-direction: column;
+  }
+}
+/* Desktop Styles (118px and above) */
+@media (min-width: 1184px) {
+  .brands--logo--container {
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  }
 }
